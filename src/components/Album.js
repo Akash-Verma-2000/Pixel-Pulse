@@ -1,8 +1,12 @@
+// Importing an image for the album from the specified path
 import AlbumImg from "./Images/Slid-4.jpg";
 
+// Functional component for rendering an album
 export default function Album({ setAlbumName, setAlbumID, albumObj, setPhotoArray, setHomePage, setPhotoPage, albumID }) {
 
+    // Function to handle the click event when an album is clicked
     function albumClickEvent() {
+        // Update state to navigate to the PhotoPage component and display photos from the clicked album
         setHomePage(false)
         setPhotoPage(true);
         setPhotoArray(albumObj.photos);
@@ -12,7 +16,7 @@ export default function Album({ setAlbumName, setAlbumID, albumObj, setPhotoArra
 
 
 
-
+    // Rendering the album component
     return (<>
 
         <div onClick={albumClickEvent} className="card my-shadow p-0 col-5 col-md-3 mx-1 my-4 album">

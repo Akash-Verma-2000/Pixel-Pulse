@@ -1,5 +1,7 @@
+// Importing CSS styles for the component
 import './Styles.css'
 
+// Importing images for the carousel
 import Slid1 from "./Images/Slid-1.jpg"
 import Slid2 from './Images/Slid-2.jpg';
 import Slid3 from './Images/Slid-3.jpg';
@@ -10,9 +12,10 @@ import Slid7 from './Images/Slid-7.jpg';
 import Slid8 from './Images/Slid-8.jpg';
 import Slid9 from './Images/Slid-9.jpg';
 
+// Functional component for rendering a carousel
 export default function Carousel() {
     return (
-
+        // Container for the carousel with styling classes
         <div className="container d-flex carousel  justify-content-center">
 
             <div className="row w-100 position-relative start-50 translate-middle d-flex justify-content-between">
